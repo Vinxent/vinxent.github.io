@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	</head>
+	<body> 
+		<%= render "header" %>
+		<div id="top photo" style= "height: 250px; background-image: url(<%= asset_path "AboutUs.jpg" %>); background-position: center; background-size: 100%;">
+			<p style = "font-size: 80px; color: white; text-align: center; padding: 5%;"> About Us</p>
+		</div>
+		<br>
+		<br>
+		<div id="content" style= "padding-left: 50px; padding-right: 50px;">
+			<p style= "text-align: center; font-size: 30px; font-weight: bold;"> Meet the People </p>
+			<p style= "text-align: center;"> At the UBCTTC, we are determined to keep <strong> you </strong> happy and the club running smoothly. <br> Get to know the people who work behind the scenes to keep the gears running! </p>
+			<br>
+			<p style= "text-align: center; font-size: 25px; font-weight: bold;"> Executive Team </p>
+			<div id="execPhotos" class="content" style= "display: block; text-align: center;">
+				<img src="<%= asset_path "Captain.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/>
+				<img src="<%= asset_path "Whitewoman.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/>
+				<img src="<%= asset_path "Whiteman.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/>
+				<img src="<%= asset_path "Whitewoman.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/>
+				<img src="<%= asset_path "Whiteman.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/>
+				<br>
+				<br>
+				<p> Vincent Liu - Captain <br> Person - Vice Captain <br> Person - Vice Vice Captain <br> Person - Vice Vice Vice Captain <br> Person - Vice Vice Vice Vice Captain </p>
+				<p> The cat (Felis catus) is a small carnivorous mammal.[1][2] It is the only domesticated species in the family Felidae and often referred to as the domestic cat to distinguish it from wild members of the family.[4] The cat is either a house cat or a farm cat, which are pets, or a feral cat, which ranges freely and avoids human contact.[5] A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries. </p>
+			</div>
+			<br>
+			<br>
+			<br>
+			<p style= "text-align: center; font-size: 25px; font-weight: bold;"> WebApp Developer </p>
+			<div id="Websitephotos" style= "display: block; text-align: center;">
+					<img src="<%= asset_path "WebsiteWoman2.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/> 
+					<img src="<%= asset_path "WebsiteMan.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/> 
+					<img src="<%= asset_path "WebsiteWoman3.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/> 
+					<img src="<%= asset_path "Captain.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/> 
+					<img src="<%= asset_path "WebsiteWoman1.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/> 
+					<br>
+					<br>
+					<p> Sheena Cheng - phone #? <br> Charles Lee - email? <br> Grace Zhang - help <br> Vincent Liu - idk <br> Andrea Shao - what im doing </p>
+					<p> The cat (Felis catus) is a small carnivorous mammal.[1][2] It is the only domesticated species in the family Felidae and often referred to as the domestic cat to distinguish it from wild members of the family.[4] The cat is either a house cat or a farm cat, which are pets, or a feral cat, which ranges freely and avoids human contact.[5] A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries. </p>
+			</div>
+			<br>
+			<br>
+			<p style= "text-align: center; font-size: 25px; font-weight: bold;"> More Executive Teams </p>
+			<div id="morePhotos" class="content" style= "display: block; text-align: center;">
+				<img src="<%= asset_path "Whiteman.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/>
+				<img src="<%= asset_path "Whitewoman.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/>
+				<img src="<%= asset_path "Whiteman.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/>
+				<img src="<%= asset_path "Whitewoman.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/>
+				<img src="<%= asset_path "Whiteman.jpg" %>" style= "border-radius: 50%; width: 150px; height: 150px; margin: 0px 10px;"/>
+				<br>
+				<br>
+				<p> Person - Position <br> Person - Position <br> Person - Position <br> Person - Position <br> Person - Position </p>
+				<p> The cat (Felis catus) is a small carnivorous mammal.[1][2] It is the only domesticated species in the family Felidae and often referred to as the domestic cat to distinguish it from wild members of the family.[4] The cat is either a house cat or a farm cat, which are pets, or a feral cat, which ranges freely and avoids human contact.[5] A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries. </p>
+			</div>
+		</div>
+		<br>
+		<%= render "footer" %>
+	
+	</body>
+</html>
