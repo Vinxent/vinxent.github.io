@@ -2,6 +2,18 @@
 
 <html>
 	<head>
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=484506682206389&autoLogAppEvents=1';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<script src="https://kit.fontawesome.com/7a1204b60d.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<meta charset="utf-8">
@@ -23,22 +35,41 @@
 		</div>
       	<div style="clear: both; height: 8px; width: 100%; background-color: #2C3449">  </div>
 
-		<div style="margin: 2%; display: block;">
-			<div id = "signup" style = "float: left; display: block; text-align: center;">
-				<h2>Club Membership Sign-up</h2>
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfykIJeCHJeF-YR9wnd_L17UQjSNe0qYb8FHX271n0VPCUAeg/viewform?embedded=true" width="640" height="1380" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-			</div>
-			<div style = "float: left; display: block; text-align: center;">
-				<h2>Competitive Team Sign-up</h2>
-				<p>Try-outs for our competitive team is now closed.</p>
-			
-				<br><br>
+		<div class="container-fluid">
+			<div class = "row" style="margin: 2%;">
+				<div class = "col-lg-6" id = "signup" style = "text-align: center;">
+					<h2>Club Membership Sign-up</h2>
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfykIJeCHJeF-YR9wnd_L17UQjSNe0qYb8FHX271n0VPCUAeg/viewform?embedded=true" width="640" height="1380" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+				</div>
+				<div class = "col-lg-6" style = "text-align: center;">
+					<h2>Weekly Club Sessions</h2>
+					<p>
+					Every Monday, Tuesday, Thursday, Friday @ AMS NEST 2nd Floor
+					<br>
+					5:00pm - 8:00pm
+					</p>
+					<br>
+					<p> Exact Time and Locations are updated weekly in our Facebook Group (see below)! </p>
+					<br>
+					
+					<h2>Competitive Team Sign-up</h2>
+					<p>
+					Try-outs for our competitive team is now closed. <br>
+					</p>
+				
+					<br><br>
 
-				<h1>Social Media Group Links</h1>
-				<h2>Facebook Group Link</h2>
-				<p>https://www.facebook.com/groups/ubctabletennis/</p>
+					<h1>Social Media Group Links</h1>
+					<h2>Facebook Group Link</h2>
+					<!--Your Group Plugin for the Web code-->
+					<div class="fb-group" 
+						data-href="https://www.facebook.com/groups/ubctabletennis/" 
+						data-width="400" 
+						data-show-social-context="true" 
+						data-show-metadata="false">
+					</div>
+				</div>
 			</div>
-
 		</div>
 
 		<div style ="clear: both;">
