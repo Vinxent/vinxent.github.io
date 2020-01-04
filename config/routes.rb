@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'sponsors', to: 'welcome#sponsors'
   get 'contact-us', to: 'welcome#contact-us'
   get 'join-us', to: 'welcome#join-us'
+  get 'login', to: 'welcome#login'
 
 
   root 'welcome#home'
