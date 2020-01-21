@@ -17,8 +17,8 @@
 		.carousel-inner img {
 			opacity: 0.85;
 			width: 100%;
-			height: 500px;
-			max-height: 500px;
+			height: 700px;
+			max-height: 700px;
 			object-fit: cover;
 		}
 		.center {
@@ -54,7 +54,12 @@
 			    <!-- Wrapper for slides -->
 			    <div class="carousel-inner">
 
-			    	<div class="carousel-item active">
+					<div class="carousel-item active">
+			        	<img src=" https://ubctabletennis.s3-us-west-2.amazonaws.com/UBCFebTournament_Banner.jpg" alt="February Tournament Photo">
+						<%= render "carousel-caption" %>
+			    	</div>
+
+			    	<div class="carousel-item">
 			        	<img src="https://ubctabletennis.s3-us-west-2.amazonaws.com/BigTeamPhoto.jpg" alt="Main Team Photo">
 						<%= render "carousel-caption" %>
 			      	</div>
@@ -71,11 +76,6 @@
 
 			      	<div class="carousel-item">
 			        	<img src="https://ubctabletennis.s3-us-west-2.amazonaws.com/funteamphoto.jpg" alt="Competitive Fun Photo">
-						<%= render "carousel-caption" %>
-			    	</div>
-
-			    	<div class="carousel-item">
-			        	<img src="https://ubctabletennis.s3-us-west-2.amazonaws.com/RedBull1.JPG" alt="Red Bull Photo">
 						<%= render "carousel-caption" %>
 			    	</div>
 
