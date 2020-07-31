@@ -6,78 +6,69 @@
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/7a1204b60d.js"></script>
 		<style>
-	    	#toc_container {
-			    background: #f9f9f9 none repeat scroll 0 0;
-			    border: 1px solid #aaa;
-			    display: table;
-			    font-size: 95%;
-			    margin-bottom: 1em;
-			    padding-right: 5px;
-			    position: absolute;
-			    top: 35%;
-			    right: 5%;
-			    width: auto;
+			.container {
+				margin-top: 2rem;
 			}
 
-			.toc_title {
-			    font-weight: 700;
-			    text-align: center;
+			.row {
+				margin-top: 1rem;
 			}
 
-			#toc_container li, #toc_container ul, #toc_container ul li{
-			    list-style: none none none none;
+			h2 {
+				margin-top: 1.5rem;
 			}
-
 
 		</style>
-		<script src="https://kit.fontawesome.com/7a1204b60d.js"></script>
 	</head>
 
 
 	<body>
-		<div id="toc_container">
-			<p class="toc_title">Contents</p>
-
-			<ul class="toc_list">
-				<li><a href="#History">History</a></li>
-				<li><a href="#Rules">Rules</a></li>
-				<li><a href="#Equipment">Equipment</a></li>
-				  <ul>
-				    <li><a href="#Rubber">Rubber</a></li>
-				    <li><a href="#Table">Table</a></li>
-				  </ul>
-				<li><a href="#FAQ">FAQ and Misconceptions</a></li>
-			</ul>
-		</div>
-
-
-
 		<%= render "header" %>
 
-		<div style = "width: 70%; margin: 30px">
-			<p style = "font-size: 40px; text-align: left;"> <b>About Table Tennis</b></p>
-			<h1 style = "font-size: 30px; text-align: left;"  id="History">History</h1>
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="container">
 
-			<h1 style = "font-size: 30px; text-align: left;"  id="Rules">Rules</h1>
+			<h1>About Table Tennis</h1>
 
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ttur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, conseconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<h1 style = "font-size: 30px; text-align: left;"  id="Equipment">Equipment</h1>
-			<h2 style = "font-size: 20px; text-align: left;"  id="Rubber">tf is rubber???</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ttur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, conseconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<h2 style = "font-size: 20px; text-align: left;"  id="Table">tf is a table???</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ttur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, conseconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h2> History </h2>
+			<a href="https://en.wikipedia.org/wiki/Table_tennis" target="_blank" rel="noopener noreferrer">source</a>
+			 
+			<p> 
+				Table tennis, also known as ping-pong and whiff-whaff, is a sport in which two or four players hit a lightweight ball, also known as the ping-pong ball, back and forth across a table using small rackets. The game takes place on a hard table divided by a net. Except for the initial serve, the rules are generally as follows: players must allow a ball played toward them to bounce one time on their side of the table, and must return it so that it bounces on the opposite side at least once. A point is scored when a player fails to return the ball within the rules. Play is fast and demands quick reactions. Spinning the ball alters its trajectory and limits an opponent's options, giving the hitter a great advantage. 
+			</p>
 
-			<h1 style = "font-size: 30px; text-align: left;" id="FAQ">FAQ and Common Misconceptions</h1>
-				
-				<ul style = "text-align: left;">
-				  <li>ping pong is like a totally different thing right lmao like ping pong is 1 bounce and tt is 2 right?? that's what my buddy says when we play in his garage </li>
-				  <li>do we play to 21 or 11 wtf is up with that</li>
-				  <li>how do i git gud</li>
-				  <li>is ping pong doubles like tennis doubles???</li>
-				  <li>how the heck do i hold this thing. </li>
-				</ul>  
+			<h2> Rules </h2>
+			<a href="http://www.pongworld.com/table-tennis-sport/rules" target="_blank" rel="noopener noreferrer">source</a>
+			<br/>
+			<b> Scoring </b>
+			<p>
+				A match is played best 3 of 5 games (or 4/7 or 5/9). For each game, the first player to reach 11 points wins that game, however a game must be won by at least a two point margin.
+			</p>
+
+			<p> A point is scored after each ball is put into play (not just when the server wins the point as in volleyball). </p>
+			<p> The edges of the table are part of the legal table surface, but not the sides. </p>
+
+			<b>Flow of the match</b>
+			<p> 
+				Each player serves two points in a row and then switch server. However, if a score of 10-10 is reached in any game, then each server serves only one point and then the server is switched. After each game, the players switch side of the table. In the final game (ie 5th game), the players switch side again after either player reaches 5 points.
+			</p>
+
+			<b>Legal serve</b>
+			<p>
+				The ball must rest on an open hand palm. Then it must be tossed up at least 6 inches and struck so the ball first bounces on the server's side and then the opponent's side.
+
+				If the serve is legal except that it touches the net, it is called a let serve. Let serves are not scored and are reserved.
+			</p>
+
+			<b>Equipment</b>
+			<p>
+				The paddle should have a red and a black side. The ball should be either orange or white and 40 mm in size. The table should be 2.74 meters long, 1.525 m wide, and 0.76 m high.
+			</p>
+
+			<h2>FAQ and Common Misconceptions</h2>
+			<p> Coming Soon! </p>
+
 		</div>
 
 		<%= render "footer" %>
