@@ -3,54 +3,127 @@
 <!DOCTYPE html>
 
 <html>
-
-	<!-- Head stores all your header files -->
-	<!-- Header files are essentially "import statements", it helps link files together -->
 	<head>
-		<script src="https://kit.fontawesome.com/7a1204b60d.js"></script>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    	<!-- IMPORT ORDER MATTERS!!! -->
+
+    	<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		<!-- jQuery JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+		<!-- Fonts JS -->
+		<script src="https://kit.fontawesome.com/7a1204b60d.js"></script>
+
+		<style>
+			.container {
+				margin-top: 2rem;
+			}
+
+			.inline {
+				display: inline-block;
+			}
+
+			h1 {
+				text-align: center;
+			}
+
+		</style>
+
 	</head>
 
-	<!-- Body stores all the code that will be displayed on the page itself -->
 	<body>
 
-		<!-- Below code calls ruby code -->
 		<%= render "header" %>
 
-		<!-- Code for the page's content goes here -->
-
-		<!-- Banner -->
-
-		<div class = "content" style = "text-align: center;">
-
-			<p style = "padding: 5%; font-size: 75px; color: black;"> Contact Us</p>
-
+		<div class = "container">
+			<h1>Contact Us</h1>
 		</div>
 
-		<div style = "padding-left: 50px; padding-right: 50px; padding-bottom: 5%; text-align: center;">
+		<div class="container">
+		  <div class="row">
+		    <div class="col-6">
+		     	<h4> Please contact us using the information below: </h4>
+				<br/>
+				<p><strong>Email:</strong> ubctabletennisclub@gmail.com</p>
+				<p><strong>Address:</strong> 6133 University Blvd, Vancouver, BC V6T 1Z1</p>
+				<br/>
+				<h4> Find Us On: </h4>
+				<br/>
+				<!-- TODO: Replace with better social media icons -->
+				<a href="https://www.facebook.com/ubcttc/" target="_blank" rel="noopener noreferrer">Facebook</a>
+				<br/>
+				<a href="https://www.linkedin.com/company/ubc-table-tennis-club/about/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 
-			<h3 style = "padding-bottom: 2%"> Please contact us using the information below! </h1>
-
-			<p><strong>Email:</strong> ubctabletennisclub@gmail.com</p>
-			<p><strong>Address:</strong> 6133 University Blvd, Vancouver, BC V6T 1Z1</p>
-
-			<!--Google map-->
-			<!-- note: I need CSS to complete this part! -->
-			<!-- refence to make it look pretty: https://mdbootstrap.com/docs/jquery/javascript/google-maps/ -->
-
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1803.0740253357073!2d-123.25187526373863!3d49.26671249347298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867398c216945b%3A0xe9bbdd7328c09b21!2sAMS%20Student%20Nest!5e0!3m2!1sen!2sca!4v1577822543587!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-			<!--Google Maps-->
-
+		    </div>
+		    <div class="col-sm">
+		     	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1803.0740253357073!2d-123.25187526373863!3d49.26671249347298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867398c216945b%3A0xe9bbdd7328c09b21!2sAMS%20Student%20Nest!5e0!3m2!1sen!2sca!4v1577822543587!5m2!1sen!2sca" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		    </div>
+		  </div>
 		</div>
 
-		<!-- Below code calls ruby code -->
+		<div class="container">
+			<h1>FAQs</h1>
+			<br/>
+			<div class="accordion" id="accordionExample">
+			  <div class="card">
+			    <div class="card-header" id="headingOne">
+			      <h2 class="mb-0">
+			        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			          How do I join the club?
+			        </button>
+			      </h2>
+			    </div>
+
+			    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+			      <div class="card-body">
+			        Checkout the
+			        <a href="http://www.ubctabletennisclub.org/join-us" target="_blank" rel="noopener noreferrer">join us</a> 
+			        page!
+			        
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingTwo">
+			      <h2 class="mb-0">
+			        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			          Do you provide equipment?
+			        </button>
+			      </h2>
+			    </div>
+			    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+			      <div class="card-body">
+			        Yes! We provide rackets, balls, and tables. Everything you need to have an awesome time. Just be aware that non-members will need to pay $2 for a racket and $1 for a ball.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			      <h2 class="mb-0">
+			        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			          What if I don't know how to play?
+			        </button>
+			      </h2>
+			    </div>
+			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+			      <div class="card-body">
+			        Worry not, we are a club that is welcome to players from all experience levels. Whether you are just a beginner or someone who has been playing for years, everyone is welcome at UBC Table Tennis Club.
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			</div>
+		
 		<%= render "footer" %>
 
 	</body>
