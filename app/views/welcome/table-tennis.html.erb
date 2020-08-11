@@ -5,43 +5,52 @@
 	<head>
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    	<!-- IMPORT ORDER MATTERS!!! -->
+
+    	<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		<!-- jQuery JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+		<!-- Fonts JS -->
 		<script src="https://kit.fontawesome.com/7a1204b60d.js"></script>
+
 		<style>
 			.container {
 				margin-top: 2rem;
-			}
-
-			.row {
-				margin-top: 1rem;
 			}
 
 			.inline {
 				display: inline-block;
 			}
 
-			h2 {
-				margin-top: 1.5rem;
-			}
-
 		</style>
 	</head>
-
 
 	<body>
 		<%= render "header" %>
 
-		<div class="container">
-			
+		<div class = "container">
 			<h1>About Table Tennis</h1>
+		</div>
 
+		<div class="container">
 			<h2 class = "inline"> History </h2>
 			<a class = "inline" href="https://en.wikipedia.org/wiki/Table_tennis" target="_blank" rel="noopener noreferrer">(source)</a>
-			 
 			<p> 
 				Table tennis, also known as ping-pong and whiff-whaff, is a sport in which two or four players hit a lightweight ball, also known as the ping-pong ball, back and forth across a table using small rackets. The game takes place on a hard table divided by a net. Except for the initial serve, the rules are generally as follows: players must allow a ball played toward them to bounce one time on their side of the table, and must return it so that it bounces on the opposite side at least once. A point is scored when a player fails to return the ball within the rules. Play is fast and demands quick reactions. Spinning the ball alters its trajectory and limits an opponent's options, giving the hitter a great advantage. 
 			</p>
+		</div>
 
+		<div class="container">
 			<h2 class = "inline"> Rules </h2>
 			<a class = "inline" href="http://www.pongworld.com/table-tennis-sport/rules" target="_blank" rel="noopener noreferrer">(source)</a>
 			<br/>
@@ -69,12 +78,17 @@
 			<p>
 				The paddle should have a red and a black side. The ball should be either orange or white and 40 mm in size. The table should be 2.74 meters long, 1.525 m wide, and 0.76 m high.
 			</p>
-
-			<h2>FAQ and Common Misconceptions</h2>
-			<p> Coming Soon! </p>
-
 		</div>
 
+		<div class="container">
+			<h2 class = "inline"> Learn More </h2>
+			
+			<p> 
+				Want to learn more about the sport? We recommend you checkout these resources:
+			</p>
+			<a href="https://www.youtube.com/watch?v=fX0yj9Qfccw" target="_blank" rel="noopener noreferrer">Table Tennis, the Beautiful Game</a>
+
+		</div>
 		<%= render "footer" %>
 	</body>
 
