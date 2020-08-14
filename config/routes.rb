@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'contact-us', to: 'welcome#contact-us'
   get 'join-us', to: 'welcome#join-us'
   get 'login', to: 'welcome#login'
+  get '2020-UBC-Invite-and-Open', to: 'welcome#2020-UBC-Invite-and-Open'
 
 
   root 'welcome#home'
