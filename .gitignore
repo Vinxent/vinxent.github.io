@@ -34,6 +34,3 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
-
-# Ignore psql database file because my password is different
-/config/database.yml
