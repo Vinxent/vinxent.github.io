@@ -15,7 +15,6 @@
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 		<script src="https://kit.fontawesome.com/7a1204b60d.js"></script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<style>
@@ -43,6 +42,42 @@
 	      	{
 	          opacity:0;
 	      	}
+
+	      	.fa {
+			  padding-top: 0.8rem;
+			  font-size: 1.5rem;
+			  width: 50px;
+			  height: 50px;
+			  text-align: center;
+			  align-items: center;
+			  text-decoration: none;
+			  transition: all .2s;
+			  border-radius: 50%;
+			  margin-right: 1rem;
+			  color: white;
+			}
+
+			.fa:hover {
+				transform: scale(1.3);
+				color: white;
+			}
+
+			.fa-facebook {
+			  background: #3B5998;
+			}
+
+			.fa-linkedin {
+			  background: #007bb5;
+			}
+
+			.fa-youtube-play {
+ 			  background: #bb0000;
+			}
+
+			.fa-instagram {
+			  background: #d23a6b;
+			}
+
 		</style>
 	</head>
 
@@ -79,14 +114,22 @@
 					<br><br>
 
 					<h2>Social Media Group Links</h2>
-					<h3>Facebook Group Link</h3>
+					<br/>
+					<a href="https://www.facebook.com/ubcttc/" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a>
+					<a href="https://www.youtube.com/channel/UCluONat-KkA3-SRRXGCx5nA" target="_blank" rel="noopener noreferrer" class ="fa fa-youtube-play"></a>
+					<a href="https://www.instagram.com/ubctabletennisclub/" target="_blank" rel="noopener noreferrer" class ="fa fa-instagram"></a>
+					<a href="https://www.linkedin.com/company/ubc-table-tennis-club/about/" target="_blank" rel="noopener noreferrer" class ="fa fa-linkedin"></a>
+						
 					<!--Your Group Plugin for the Web code-->
+					<!---
 					<div class="fb-group" 
 						data-href="https://www.facebook.com/groups/ubctabletennis/" 
 						data-width="400" 
 						data-show-social-context="true" 
 						data-show-metadata="false">
 					</div>
+					--->
+
 				</div>
 			</div>
 		</div>
