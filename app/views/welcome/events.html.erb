@@ -10,23 +10,73 @@
 		<!-- Fonts JS -->
 		<script src="https://kit.fontawesome.com/7a1204b60d.js"></script>
 
+		<style>
+    		/* Style the banner */
+			.banner {
+				height: 350px;
+				background-image: url(https://ubctabletennis.s3-us-west-2.amazonaws.com/BigTeamPhoto.jpg);
+				background-position: center; 
+				background-size: cover;
+				background-repeat:no-repeat;
+				opacity: 0.85;
+			}
+
+			/*Style the banner text */
+			.title {
+				padding-top: 5rem;
+				font-size: 8rem;
+				color: white; 
+				text-align: center; 
+				text-shadow: 2px 2px 10px black;
+			}
+
+			.calendar{
+				margin: 0 auto;
+			}
+
+	
+    	</style>
+
 	</head>
 	<body> 
 		<%= render "header" %>
+
+		<!-- Banner -->
+		<div id="events_banner" class = "banner">
+		<h1 class="title"> Events</h1>
+		</div>
+
 		<br>
 		<div id="content" style= "padding-left: 50px; padding-right: 50px; text-align: center">
-			<h1> Events </h1>
-			<br>
 			
-			<h2> Tournaments </h2>
-			<p style = "text-align: center"><strong>OPEN SINGLES REGISRATATION DEADLINE EXTENDED TO FEBRUARY 7th 11:59pm</strong></p>
+			<h2> Latest News </h2>
+			<br>
+			<%# <p style = "text-align: center"><strong>OPEN SINGLES REGISRATATION DEADLINE EXTENDED TO FEBRUARY 7th 11:59pm</strong></p>
+			<br> %>
+
+			<div class="alert alert-primary" role="alert">
+ 				<strong>2/1/2020: OPEN SINGLES REGISRATATION DEADLINE EXTENDED TO FEBRUARY 7th 11:59pm</strong>
+			</div>
+
+			<div class="alert alert-primary" role="alert">
+ 				<strong>1/1/2020: REGISTRATION OPEN, SIGN UP LINK www.testlink.com</strong>
+			</div>
 			<br>
 
-			<div id="tournaments" class="content" style= "display: block; text-align: center;">
+			
+			
+		<h2> Calendar </h2>
+		<br>
+		<iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FVancouver&amp;src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23009688&amp;title=Events%20Calendar&amp;showTabs=0&amp;showCalendars=0&amp;showPrint=0" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			<br>
+			<br>
+			<br>
+		<h2> Past Tournaments </h2>
+		<br>
+		<div id="tournaments" class="content" style= "display: block; text-align: center;">
 				<strong>2020 UBCTTC February Open Singles and UBC Invite</strong>
 				<br>
 				February 9th, 2020 @ AMS NEST UBC Campus
-				<br><br>
 				<div>
 					<p style = "text-align: center;">Draws | Results | Photos </p>
 				</div>
@@ -34,6 +84,9 @@
 				<strong>2019 UBCTTC October Tournament</strong>
 				<br>
 				October 20th, 2019 @ AMS NEST UBC Campus
+				<div>
+					<p style = "text-align: center;">Draws | Results | Photos </p>
+				</div>
 			</div>
 			<br><br><br>
 		</div>
