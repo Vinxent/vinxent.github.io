@@ -25,4 +25,4 @@ test:
 
 production:
   <<: *default
-  database: ubcttc_production
+  database: ubcttc_producti
