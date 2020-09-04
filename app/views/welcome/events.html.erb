@@ -4,6 +4,12 @@
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- jQuery JS -->
+    <!-- TODO: Possibly install jQuery using gems so we don't have to import it every time -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -14,11 +20,11 @@
     		/* Style the banner */
 			.banner {
 				height: 350px;
-				background-image: url(https://ubctabletennis.s3-us-west-2.amazonaws.com/BigTeamPhoto.jpg);
+				background-image: url(https://ubctabletennis.s3-us-west-2.amazonaws.com/homecoming1.jpg);
 				background-position: center; 
 				background-size: cover;
 				background-repeat:no-repeat;
-				opacity: 0.85;
+				opacity: 2;
 			}
 
 			/*Style the banner text */
@@ -31,8 +37,46 @@
 			}
 
 			.calendar{
-				margin: 0 auto;
+				float: center;
+				width:47%;
+
 			}
+
+			.alert {
+				margin: 10px auto;
+				width: 70%;
+			}
+
+			#float_l {
+				float:left;
+				margin-top: 220px;
+				margin-left: 5%;
+				/* text-align:left;
+				margin-top: -400px; */
+				}
+
+			#float_r {
+				float:right;
+				margin-top: 220px; 
+				margin-right: 5%;
+				/* text-align:right;
+				padding-bottom: 315px;
+				margin-top: -68px; */
+				
+			}
+
+			#cal_fontg {
+				font-family: impact;
+				font-size: 10vw;
+				color: #616161;
+			}
+
+			#cal_fontb {
+				font-family: impact;
+				font-size: 10vw;
+				color: #002145;
+			}
+
 
 	
     	</style>
@@ -50,30 +94,48 @@
 		<div id="content" style= "padding-left: 50px; padding-right: 50px; text-align: center">
 			
 			<h2> Latest News </h2>
-			<br>
 			<%# <p style = "text-align: center"><strong>OPEN SINGLES REGISRATATION DEADLINE EXTENDED TO FEBRUARY 7th 11:59pm</strong></p>
 			<br> %>
 
 			<div class="alert alert-primary" role="alert">
- 				<strong>2/1/2020: OPEN SINGLES REGISRATATION DEADLINE EXTENDED TO FEBRUARY 7th 11:59pm</strong>
+ 				<strong><b>2/1/2020:</b> OPEN SINGLES REGISRATATION DEADLINE EXTENDED TO FEBRUARY 7th 11:59pm</strong>
 			</div>
 
 			<div class="alert alert-primary" role="alert">
- 				<strong>1/1/2020: REGISTRATION OPEN, SIGN UP LINK www.testlink.com</strong>
+ 				<strong><b>1/1/2020:</b> REGISTRATION OPEN, SIGN UP LINK www.testlink.com</strong>
 			</div>
 			<br>
+		<h2> Upcoming Events </h2>
+		<div id="tournaments" class="fade" style= "display: block; text-align: center;">
+				<strong>2020 UBCTTC February Open Singles and UBC Invite</strong>
+				<br>
+				February 9th, 2020 @ AMS NEST UBC Campus
+				<br>
+				<br>
+				<strong>2019 UBCTTC October Tournament</strong>
+				<br>
+				October 20th, 2019 @ AMS NEST UBC Campus
+			</div>
+			<br><br><br>	
 
 			
-			
-		<h2> Calendar </h2>
+	
+		<h2 > Club Calendar </h2>
+		<iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FVancouver&amp;src=cXY1dmNlZHYwdGk5MGkzYm01YWVmMWJuOWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Y2ZhZGg2dHZmdXFoaGRvY2Z1a3M0NDNqNmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23616161&amp;color=%23002145&amp;color=%23E67C73&amp;showTz=0&amp;showTabs=0&amp;showPrint=0&amp;showDate=1&amp;title=Club%20Calendar" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		<div id="float_l">
+		<h2 id="cal_fontg" class="fade"> AMS </h2>
+		</div>
+		<div id="float_r">
+		<h2 id="cal_fontb" class="fade"> TSC </h2>
+		</div>
+
+			<br>
+			<br>
+			<br>
+
+		<h2> Past Events </h2>
 		<br>
-		<iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FVancouver&amp;src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23009688&amp;title=Events%20Calendar&amp;showTabs=0&amp;showCalendars=0&amp;showPrint=0" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-			<br>
-			<br>
-			<br>
-		<h2> Past Tournaments </h2>
-		<br>
-		<div id="tournaments" class="content" style= "display: block; text-align: center;">
+		<div id="tournaments" class="fade" style= "display: block; text-align: center;">
 				<strong>2020 UBCTTC February Open Singles and UBC Invite</strong>
 				<br>
 				February 9th, 2020 @ AMS NEST UBC Campus
@@ -91,6 +153,31 @@
 			<br><br><br>
 		</div>
 		<%= render "footer" %>
+
+		<script>
+      /* Every time the window is scrolled ... */
+        $(window).scroll( function(){
+      
+          /* Check the location of each desired element */
+          $('.fade').each( function(i){
+                            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                      
+            }
+              
+          }); 
+      
+        });
+
+
+		</script>
 	
+
 	</body>
 </html>
