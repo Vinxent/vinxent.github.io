@@ -2,35 +2,66 @@
 <html lang="en">
 	<head>
 
-		<script src="https://kit.fontawesome.com/7a1204b60d.js"></script>
-		<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    	<!-- Boostrap Carousel Plugins-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 		
-		 <!-- jQuery JS -->
+		 <!-- JS Imports -->
    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-		
+		<script src="https://kit.fontawesome.com/7a1204b60d.js"></script>
+
 		<style>
-			/* Make the image fully responsive */
+
 			.carousel-inner img {
 				opacity: 0.85;
 				width: 100%;
-				height: 700px;
-				max-height: 700px;
+				height: 350px;
 				object-fit: cover;
 			}
 
-			.center {
-				position: absolute;
-				top: 25%;
-				left: 20%;
-				transform: translate(-4%, -60%);
+			.btn-dark {
+				background-color: #2C3449;
+			}
+
+			.grey {
+				background-color: #cecece;
+			}
+
+			.title-banner {
+				background-image: 
+					linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+					url(https://ubctabletennis.s3-us-west-2.amazonaws.com/BigTeamPhoto.jpg);
+				 background-attachment: fixed;
+				 background-position: center;
+				 background-repeat: no-repeat;
+				 background-size: cover;
+				height: 550px;
+			}
+
+			.title {
+				text-align: center;
+				align-self: center;
+				color: white;
+				font-size: 5rem;
+			}
+
+			.sub-title {
+				text-align: center;
+				align-self: center;
+				color: white;
+				padding-top: 150px;
+				font-size: 2rem;
+			}
+
+			.equal-section {
+				padding-top: 5rem;
+				padding-bottom: 5rem;
+			}
+
+			.section {
+				padding-top: 5rem;
+				padding-bottom: 3rem;
 			}
 
 		</style>
@@ -40,77 +71,188 @@
 	
 		<%= render "header" %>
 
-		<!-- Home Page Content -->
 		<div>
 
-			<!-- Boostrap Carousel Content -->
-			<div class="container-fluid" style="padding: 0;">
-
-			  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-			    <!-- Indicators -->
-			    <ol class="carousel-indicators">
-			    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			    	<li data-target="#myCarousel" data-slide-to="1"></li>
-			    	<li data-target="#myCarousel" data-slide-to="2"></li>
-			    	<li data-target="#myCarousel" data-slide-to="3"></li>
-			    	<li data-target="#myCarousel" data-slide-to="4"></li>
-
-			    </ol>
-
-			    <!-- Wrapper for slides -->
-			    <div class="carousel-inner">
-
-					<div class="carousel-item active">
-			        	<img src=" https://ubctabletennis.s3-us-west-2.amazonaws.com/UBCFebTournament_Banner.jpg" alt="February Tournament Photo">
-						<%= render "carousel-caption" %>
-			    	</div>
-
-			    	<div class="carousel-item">
-			        	<img src="https://ubctabletennis.s3-us-west-2.amazonaws.com/BigTeamPhoto.jpg" alt="Main Team Photo">
-						<%= render "carousel-caption" %>
-			      	</div>
-
-			      	<div class="carousel-item">
-			        	<img src="https://ubctabletennis.s3-us-west-2.amazonaws.com/joinus.jpg" alt="Join Us Photo">
-						<%= render "carousel-caption" %>
-			      	</div>
-			    
-			      	<div class="carousel-item">
-			        	<img src="https://ubctabletennis.s3-us-west-2.amazonaws.com/TeamPhotoFallDiv2019.jpg" alt="Competitive Team Photo">
-						<%= render "carousel-caption" %>
-			      	</div>
-
-			      	<div class="carousel-item">
-			        	<img src="https://ubctabletennis.s3-us-west-2.amazonaws.com/funteamphoto.jpg" alt="Competitive Fun Photo">
-						<%= render "carousel-caption" %>
-			    	</div>
-
-			    </div>
-
-			    <!-- Left and right controls -->
-			    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-					<span class="carousel-control-prev-icon"></span>
-				</a>
-				<a class="carousel-control-next" href="#myCarousel" data-slide="next">
-					<span class="carousel-control-next-icon"></span>
-				</a>
-			  </div>
+			<div class="container-fluid title-banner">
+				<h2 class = "sub-title">The University of British Columbia</h2>
+				<h1 class = "title">Table Tennis Club</h1>
 			</div>
 
 			<div style="clear: both; height: 8px; width: 100%; background-color: #2C3449">  </div>
 
-			<div class="title" style="margin: 5%;">
-				<h1>UBC Table Tennis Club</h1>
+			<div class = "container equal-section">
+				<div class = "row">
+					<div class = "col-lg align-self-center ml-5 mr-5 mb-5">
+
+						<h2> About </h2>
+						<br/>
+
+						<p>The UBC Table Tennis Club is committed to providing an organized environment for anyone interested in playing table tennis. Anyone interested in playing table tennis is welcome, regardless of your skill level. No previous experience is necessary.</p>
+
+						<p> We host weekly drop-in sessions in The Nest Building, with the scheduling updates posted in our <a href="https://www.facebook.com/groups/ubctabletennis" target="_blank" rel="noopener noreferrer">Facebook group</a>!
+						Drop-in sessions are free for registered members, and $2 for non-members. Equipment rentals are $1 per person.</p>
+
+					</div>
+					<div class = "col-lg">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+						    <!-- Indicators -->
+						    <ol class="carousel-indicators">
+						    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						    	<li data-target="#myCarousel" data-slide-to="1"></li>
+						    	<li data-target="#myCarousel" data-slide-to="2"></li>
+						    	<li data-target="#myCarousel" data-slide-to="3"></li>
+						    	<li data-target="#myCarousel" data-slide-to="4"></li>
+						    </ol>
+
+						    <!-- Wrapper for slides -->
+						    <div class="carousel-inner">
+
+								<div class="carousel-item active">
+						        	<img src=" https://ubctabletennis.s3-us-west-2.amazonaws.com/UBCFebTournament_Banner.jpg" alt="February Tournament Photo">
+						    	</div>
+
+						    	<div class="carousel-item">
+						        	<img src="https://ubctabletennis.s3-us-west-2.amazonaws.com/BigTeamPhoto.jpg" alt="Main Team Photo">
+						      	</div>
+
+						      	<div class="carousel-item">
+						        	<img src="https://ubctabletennis.s3-us-west-2.amazonaws.com/joinus.jpg" alt="Join Us Photo">
+						      	</div>
+						    
+						      	<div class="carousel-item">
+						        	<img src="https://ubctabletennis.s3-us-west-2.amazonaws.com/TeamPhotoFallDiv2019.jpg" alt="Competitive Team Photo">
+						      	</div>
+
+						      	<div class="carousel-item">
+						        	<img src="https://ubctabletennis.s3-us-west-2.amazonaws.com/funteamphoto.jpg" alt="Competitive Fun Photo">
+						    	</div>
+						    </div>
+
+						    <!-- Left and right controls -->
+						    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+					  	</div>
+					</div>
+				</div>
 			</div>
 
-			<div class="text" style="margin: 5%;">
-				<h1>The University of British Columbia</h1>
-				<h2>Table Tennis Club</h2>
-				<p>
-					Every Monday, Tuesday, Thursday, Friday @ AMS NEST 2nd Floor<br>
-					5:00pm-8:00pm
-				</p>
+			<div class = "grey container-fluid">
+
+				<div class = "container section">
+
+					<div class = "row text-center">
+
+						<div class = "col-lg mb-5">
+							<i class="fas fa-medal fa-9x"></i>
+							<h2 class = "mt-4"> Events </h2>
+							<p class = "text-left mr-5 ml-5 mt-3 mb-4"> We host tournaments and other table tennis related events throughout the school year. Our tournaments are open to players of all skill levels and there are always prizes to win. Keep an eye out for our latest events on our <a href="https://www.facebook.com/groups/ubctabletennis" target="_blank" rel="noopener noreferrer"> Facebook page</a>, or via this website. </p>
+
+							<a href="/events" target="_blank" rel="noopener noreferrer" class="btn btn-dark" role="button" aria-disabled="true">Upcoming Events</a>
+
+						</div>
+
+						<div class = "col-lg mb-5">
+							<i class="fas fa-table-tennis fa-9x"></i>
+							<h2 class = "mt-4"> Membership </h2>
+							<p class = "text-left mr-5 ml-5 mt-3 mb-4"> Becoming a member is the easiest way to get free access to all of our offerings. Member benefits include free entry into UBCTTC hosted tournaments, free drop-in session entry, free equipment rentals and more! </p>
+
+							<a href="/join-us" target="_blank" rel="noopener noreferrer" class="btn btn-dark" role="button" aria-disabled="true">Become a Member</a>
+						</div>
+
+						<div class = "col-lg mb-5">
+							<i class="fas fa-users fa-9x"></i>
+							<h2 class = "mt-4"> Competitive Team </h2>
+							<p class = "text-left mr-5 ml-5 mt-3 mb-4"> The competitive team has competed in National Collegiate Table Tennis Collegiate Association since 2006 in all the available events: Co-ed Teams, Women’s Teams, Men’s Doubles, Women’s Doubles, Men’s Singles, and Women’s Singles. </p>
+
+							<a href="/team" target="_blank" rel="noopener noreferrer" class="btn btn-dark" role="button" aria-disabled="true">Learn More</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class = "container section">
+				<div class = "row">
+
+					<div class = "col-lg ml-5 mr-5 mb-5">
+						<h2 class = "mb-4"> Join Us </h2>
+						<strong> Weekly Club Sessions </strong>
+						<p> Every Monday, Tuesday, Thursday, Friday @ AMS NEST 2nd Floor: 5:00pm - 8:00pm </p>
+						<p> Exact Time and Locations are updated weekly in our <a href="https://www.facebook.com/groups/ubctabletennis" target="_blank" rel="noopener noreferrer">Facebook Group</a>! </p>
+
+						<br/>
+
+						<strong> Competitive Team Sign-up </strong>
+						<p> Try-outs for our competitive team is now closed. </p>
+
+						<br/>
+
+						<strong> Memberships </strong>
+						<p> Sign up for our memberships <a href="/join-us" target="_blank" rel="noopener noreferrer"> here</a>.</p>
+
+					</div>
+
+					<div class = "col-lg ml-5 mr-5 mb-5">
+						<h2 class = "text-center mb-4">FAQs</h2>
+						<div class="accordion" id = "accordionExample">
+						  <div class="card">
+						    <div class="card-header" id="headingOne">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          How do I join the club?
+						        </button>
+						      </h2>
+						    </div>
+
+						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+						      <div class="card-body">
+						        Checkout the
+						        <a href="http://www.ubctabletennisclub.org/join-us" target="_blank" rel="noopener noreferrer">join us</a> 
+						        page!
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingTwo">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          Do you provide equipment?
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						      <div class="card-body">
+						        Yes! We provide rackets, balls, and tables. Everything you need to have an awesome time. Just be aware that non-members will need to pay $2 for a racket and $1 for a ball.
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingThree">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          What if I don't know how to play?
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						      <div class="card-body">
+						        Worry not, we are a club that is welcome to players from all experience levels. Whether you are just a beginner or someone who has been playing for years, everyone is welcome at UBC Table Tennis Club.
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div class = "text-center">
+							<a href="/contact-us" target="_blank" rel="noopener noreferrer" class="btn btn-dark mt-5" role="button" aria-disabled="true">More Questions? Contact Us</a>
+						</div>
+
+					</div>
+				</div>
 			</div>
 
 		</div>
