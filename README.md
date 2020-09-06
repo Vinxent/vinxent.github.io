@@ -2,7 +2,7 @@
 
 This is the code for [www.ubctabletennis.org](http://www.ubctabletennis.org/).
 
-**Tech Stack:**
+** Tech Stack: **
 - Ruby
 - Ruby on Rails
 - JavaScript
