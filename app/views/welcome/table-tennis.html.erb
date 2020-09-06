@@ -11,70 +11,95 @@
 
 		<style>
 
+			/* Style the banner */
+			.banner {
+				height: 300px;
+				background-image: url(https://ubctabletennis.s3-us-west-2.amazonaws.com/winter_15.JPG);
+				background-position: bottom; 
+				background-size: cover;
+				background-repeat:no-repeat;
+				background-attachment: fixed;
+				opacity: 0.85;
+			}
+
+			/*Style the banner text */
+			h1 {
+				padding-top: 5rem;
+				font-size: 4rem;
+				color: white; 
+				text-align: center; 
+				text-shadow: 2px 2px 10px black;
+			}
+
 			.inline {
 				display: inline-block;
 			}
 
-			h1 {
-				text-align: center; 
+			.section {
+				padding-top: 5rem;
+				padding-bottom: 3rem;
 			}
-			
+
 		</style>
 	</head>
 
 	<body>
 		<%= render "header" %>
 
-		<div class = "container mt-5">
+		<!-- Banner -->
+		<div class = "banner">
 			<h1>About Table Tennis</h1>
 		</div>
+		<div style="clear: both; height: 8px; width: 100%; background-color: #2C3449">  </div>
 
-		<div class="container mt-5">
-			<h2 class = "inline"> History </h2>
-			<a class = "inline" href="https://en.wikipedia.org/wiki/Table_tennis" target="_blank" rel="noopener noreferrer">(source)</a>
-			<p> 
-				Table tennis, also known as ping-pong and whiff-whaff, is a sport in which two or four players hit a lightweight ball, also known as the ping-pong ball, back and forth across a table using small rackets. The game takes place on a hard table divided by a net. Except for the initial serve, the rules are generally as follows: players must allow a ball played toward them to bounce one time on their side of the table, and must return it so that it bounces on the opposite side at least once. A point is scored when a player fails to return the ball within the rules. Play is fast and demands quick reactions. Spinning the ball alters its trajectory and limits an opponent's options, giving the hitter a great advantage. 
-			</p>
-		</div>
+		<div class = "section">
+			<div class="container">
+				<h2 class = "inline"> History </h2>
+				<a class = "inline" href="https://en.wikipedia.org/wiki/Table_tennis" target="_blank" rel="noopener noreferrer">(source)</a>
+				<p> 
+					Table tennis, also known as ping-pong and whiff-whaff, is a sport in which two or four players hit a lightweight ball, also known as the ping-pong ball, back and forth across a table using small rackets. The game takes place on a hard table divided by a net. Except for the initial serve, the rules are generally as follows: players must allow a ball played toward them to bounce one time on their side of the table, and must return it so that it bounces on the opposite side at least once. A point is scored when a player fails to return the ball within the rules. Play is fast and demands quick reactions. Spinning the ball alters its trajectory and limits an opponent's options, giving the hitter a great advantage. 
+				</p>
+			</div>
 
-		<div class="container mt-5">
-			<h2 class = "inline"> Rules </h2>
-			<a class = "inline" href="http://www.pongworld.com/table-tennis-sport/rules" target="_blank" rel="noopener noreferrer">(source)</a>
-			<br/>
-			<b> Scoring </b>
-			<p>
-				A match is played best 3 of 5 games (or 4/7 or 5/9). For each game, the first player to reach 11 points wins that game, however a game must be won by at least a two point margin.
-			</p>
+			<div class="container mt-5">
+				<h2 class = "inline"> Rules </h2>
+				<a class = "inline" href="http://www.pongworld.com/table-tennis-sport/rules" target="_blank" rel="noopener noreferrer">(source)</a>
+				<br/>
+				<b> Scoring </b>
+				<p>
+					A match is played best 3 of 5 games (or 4/7 or 5/9). For each game, the first player to reach 11 points wins that game, however a game must be won by at least a two point margin.
+				</p>
 
-			<p> A point is scored after each ball is put into play (not just when the server wins the point as in volleyball). </p>
-			<p> The edges of the table are part of the legal table surface, but not the sides. </p>
+				<p> A point is scored after each ball is put into play (not just when the server wins the point as in volleyball). </p>
+				<p> The edges of the table are part of the legal table surface, but not the sides. </p>
 
-			<b>Flow of the match</b>
-			<p> 
-				Each player serves two points in a row and then switch server. However, if a score of 10-10 is reached in any game, then each server serves only one point and then the server is switched. After each game, the players switch side of the table. In the final game (ie 5th game), the players switch side again after either player reaches 5 points.
-			</p>
+				<b>Flow of the match</b>
+				<p> 
+					Each player serves two points in a row and then switch server. However, if a score of 10-10 is reached in any game, then each server serves only one point and then the server is switched. After each game, the players switch side of the table. In the final game (ie 5th game), the players switch side again after either player reaches 5 points.
+				</p>
 
-			<b>Legal serve</b>
-			<p>
-				The ball must rest on an open hand palm. Then it must be tossed up at least 6 inches and struck so the ball first bounces on the server's side and then the opponent's side.
+				<b>Legal serve</b>
+				<p>
+					The ball must rest on an open hand palm. Then it must be tossed up at least 6 inches and struck so the ball first bounces on the server's side and then the opponent's side.
 
-				If the serve is legal except that it touches the net, it is called a let serve. Let serves are not scored and are reserved.
-			</p>
+					If the serve is legal except that it touches the net, it is called a let serve. Let serves are not scored and are reserved.
+				</p>
 
-			<b>Equipment</b>
-			<p>
-				The paddle should have a red and a black side. The ball should be either orange or white and 40 mm in size. The table should be 2.74 meters long, 1.525 m wide, and 0.76 m high.
-			</p>
-		</div>
+				<b>Equipment</b>
+				<p>
+					The paddle should have a red and a black side. The ball should be either orange or white and 40 mm in size. The table should be 2.74 meters long, 1.525 m wide, and 0.76 m high.
+				</p>
+			</div>
 
-		<div class="container mt-5 mb-5">
-			<h2 class = "inline"> Learn More </h2>
-			
-			<p> 
-				Want to learn more about the sport? We recommend you checkout these resources:
-			</p>
-			<a href="https://www.youtube.com/watch?v=fX0yj9Qfccw" target="_blank" rel="noopener noreferrer">Table Tennis, the Beautiful Game</a>
+			<div class="container mt-5 mb-5">
+				<h2 class = "inline"> Learn More </h2>
+				
+				<p> 
+					Want to learn more about the sport? We recommend you checkout these resources:
+				</p>
+				<a href="https://www.youtube.com/watch?v=fX0yj9Qfccw" target="_blank" rel="noopener noreferrer">Table Tennis, the Beautiful Game</a>
 
+			</div>
 		</div>
 		<%= render "footer" %>
 	</body>

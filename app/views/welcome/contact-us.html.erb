@@ -24,12 +24,33 @@
 
 		<style>
 			
-			.inline {
-				display: inline-block;
+			/* Style the banner */
+			.banner {
+				height: 300px;
+				background-image: url(https://ubctabletennis.s3-us-west-2.amazonaws.com/UBCTTC+Cover+Photo.png);
+				background-position: bottom; 
+				background-size: cover;
+				background-repeat:no-repeat;
+				background-attachment: fixed;
+				opacity: 0.85;
 			}
 
+			/*Style the banner text */
 			h1 {
-				text-align: center;
+				padding-top: 5rem;
+				font-size: 4rem;
+				color: white; 
+				text-align: center; 
+				text-shadow: 2px 2px 10px black;
+			}
+
+			.section {
+				padding-top: 5rem;
+				padding-bottom: 3rem;
+			}
+
+			.inline {
+				display: inline-block;
 			}
 
 			.fa {
@@ -75,84 +96,90 @@
 
 		<%= render "header" %>
 
-		<div class = "container mt-5">
+		<!-- Banner -->
+		<div class = "banner">
 			<h1>Contact Us</h1>
 		</div>
+		<div style="clear: both; height: 8px; width: 100%; background-color: #2C3449">  </div>
 
-		<div class="container mt-5">
-		  <div class="row">
-		    <div class="col-6">
-		     	<h4> Please contact us using the information below: </h4>
+		<div class = "section">
+			<div class="container mb-5">
+			  <div class="row">
+			    <div class="col-6">
+			     	<h2> Contact Information </h2>
+			     	<p> Please contact us using the information below.</p>
+			     	<br/>
+			     	
+					<p><strong>Email:</strong> ubctabletennisclub@gmail.com</p>
+					<p><strong>Address:</strong> 6133 University Blvd, Vancouver, BC V6T 1Z1</p>
+					<br/><br/>
+					<h2> Find Us On </h2>
+					<br/>
+					<a href="https://www.facebook.com/ubcttc/" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a>
+					<a href="https://www.youtube.com/channel/UCluONat-KkA3-SRRXGCx5nA" target="_blank" rel="noopener noreferrer" class ="fa fa-youtube-play"></a>
+					<a href="https://www.instagram.com/ubctabletennisclub/" target="_blank" rel="noopener noreferrer" class ="fa fa-instagram"></a>
+					<a href="https://www.linkedin.com/company/ubc-table-tennis-club/about/" target="_blank" rel="noopener noreferrer" class ="fa fa-linkedin"></a>
+			    </div>
+
+			    <div class="col-sm">
+			     	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1803.0740253357073!2d-123.25187526373863!3d49.26671249347298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867398c216945b%3A0xe9bbdd7328c09b21!2sAMS%20Student%20Nest!5e0!3m2!1sen!2sca!4v1577822543587!5m2!1sen!2sca" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			    </div>
+		       </div>
+			</div>
+
+			<div class="container mt-5 mb-5">
+				<h2 class = "text-center">FAQs</h2>
 				<br/>
-				<p><strong>Email:</strong> ubctabletennisclub@gmail.com</p>
-				<p><strong>Address:</strong> 6133 University Blvd, Vancouver, BC V6T 1Z1</p>
-				<br/>
-				<h4> Find Us On: </h4>
-				<br/>
-				<a href="https://www.facebook.com/ubcttc/" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a>
-				<a href="https://www.youtube.com/channel/UCluONat-KkA3-SRRXGCx5nA" target="_blank" rel="noopener noreferrer" class ="fa fa-youtube-play"></a>
-				<a href="https://www.instagram.com/ubctabletennisclub/" target="_blank" rel="noopener noreferrer" class ="fa fa-instagram"></a>
-				<a href="https://www.linkedin.com/company/ubc-table-tennis-club/about/" target="_blank" rel="noopener noreferrer" class ="fa fa-linkedin"></a>
-		    </div>
+				<div class="accordion" id = "accordionExample">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          How do I join the club?
+				        </button>
+				      </h2>
+				    </div>
 
-		    <div class="col-sm">
-		     	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1803.0740253357073!2d-123.25187526373863!3d49.26671249347298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867398c216945b%3A0xe9bbdd7328c09b21!2sAMS%20Student%20Nest!5e0!3m2!1sen!2sca!4v1577822543587!5m2!1sen!2sca" width="500" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-		    </div>
-	       </div>
-		</div>
-
-		<div class="container mt-5 mb-5">
-			<h1>FAQs</h1>
-			<br/>
-			<div class="accordion" id = "accordionExample">
-			  <div class="card">
-			    <div class="card-header" id="headingOne">
-			      <h2 class="mb-0">
-			        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			          How do I join the club?
-			        </button>
-			      </h2>
-			    </div>
-
-			    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-			      <div class="card-body">
-			        Checkout the
-			        <a href="http://www.ubctabletennisclub.org/join-us" target="_blank" rel="noopener noreferrer">join us</a> 
-			        page!
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <div class="card-header" id="headingTwo">
-			      <h2 class="mb-0">
-			        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			          Do you provide equipment?
-			        </button>
-			      </h2>
-			    </div>
-			    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-			      <div class="card-body">
-			        Yes! We provide rackets, balls, and tables. Everything you need to have an awesome time. Just be aware that non-members will need to pay $2 for a racket and $1 for a ball.
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <div class="card-header" id="headingThree">
-			      <h2 class="mb-0">
-			        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			          What if I don't know how to play?
-			        </button>
-			      </h2>
-			    </div>
-			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-			      <div class="card-body">
-			        Worry not, we are a club that is welcome to players from all experience levels. Whether you are just a beginner or someone who has been playing for years, everyone is welcome at UBC Table Tennis Club.
-			      </div>
-			    </div>
-			  </div>
+				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Checkout the
+				        <a href="http://www.ubctabletennisclub.org/join-us" target="_blank" rel="noopener noreferrer">join us</a> 
+				        page!
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Do you provide equipment?
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Yes! We provide rackets, balls, and tables. Everything you need to have an awesome time. Just be aware that non-members will need to pay $2 for a racket and $1 for a ball.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          What if I don't know how to play?
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Worry not, we are a club that is welcome to players from all experience levels. Whether you are just a beginner or someone who has been playing for years, everyone is welcome at UBC Table Tennis Club.
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</div>
-		
+			
 		<%= render "footer" %>
 
 	</body>

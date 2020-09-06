@@ -1,25 +1,14 @@
-# README
-Soccer
+# UBC Table Tennis Club (http://www.ubctabletennis.org/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the code for [www.ubctabletennis.org](http://www.ubctabletennis.org/).
 
-Things you may want to cover:
+**Tech Stack:**
+- Ruby
+- Ruby on Rails
+- JavaScript
+- HTML
+- CSS
+- Bootstrap
+- Heroku
+- PostgreSQL
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
