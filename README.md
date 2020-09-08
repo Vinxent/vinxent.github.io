@@ -1,8 +1,8 @@
-# UBC Table Tennis Club (http://www.ubctabletennis.org/)
+# [UBC Table Tennis Club](http://www.ubctabletennis.org/)
 
 This is the code for [www.ubctabletennis.org](http://www.ubctabletennis.org/).
 
-** Tech Stack: **
+**Tech Stack:**
 - Ruby
 - Ruby on Rails
 - JavaScript
